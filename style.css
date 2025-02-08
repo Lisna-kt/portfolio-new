@@ -1,0 +1,71 @@
+
+
+  .card{
+    box-shadow:0 4px 8px 0 rgba(255,204,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .cloud{
+    animation-name: cloud-img;
+    position: relative;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cloud-img{
+    0%{left:0px;top:70px;opacity:0.5;}
+    100%{left:1400px;top:70px;opacity:0.4;}
+    /* 100%{left:0px;top:70px;} */
+
+  }
+  .nav-item:hover{
+    text-decoration: underline #FFCC00;
+   
+    border-radius: 50px;
+
+  }
+  .computer{
+    animation-name: computer-img;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    animation-fill-mode: backwards;
+  }
+  @keyframes computer-img{
+    0%{left:0px;top:0px;}
+    50%{left:0px;top:30px;}
+    100%{left:0px;top:0px;}
+    /* 100%{left:0px;top:70px;} */
+
+  }
+  .plane{
+    animation-name: plane-img;
+    position: relative;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    
+  }
+  @keyframes plane-img{
+    0%{left:20px;top:0px;}
+    50%{left:0px;top:10px;}
+    100%{left:20px;top:0px;}
+    /* 100%{left:0px;top:70px;} */
+
+  }
+  .card:hover i{
+    color:white!important;
+
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow:0 4px 8px 0 rgba(255,204,0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important; 
+}
+#book:hover h2{
+  color:white !important;
+}
+
