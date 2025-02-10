@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
-<body class="Helvetica Neue", Arial, sans-serif>
+<body class="Helvetica Neue", Arial, sans-serif style="overflow-x:hidden">
     <!-- <!..navbar> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark  me-auto sticky-top "style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
             <div class="container ">
@@ -67,7 +67,7 @@
                 </div>
             </div>
            
-            <div class="col-md-6 d-none d-md-block text-center  header-image">
+            <div class="col-md-6 d-none d-lg-block text-center  header-image">
                 <img src="lisna-img.png" id="header-images"class=" "alt="Lisna" style="border-radius: 50%;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
             </div>
         </div>
@@ -178,46 +178,52 @@
     </section>
 
     <!-- project section -->
-    <section id="projects"class="pt-5">
+    <section id="projects"class="pt-5 pb-5">
         <h1 class="text-white text-center fw-bold mb-2 pt-5">Projects</h1>
-        <div class="text-warning text-center mb-4" style="height: 3px; width: 50px; margin: 0 auto; background-color: #fbc531;"></div>
+        <div class="text-warning text-center mb-4" style="border-radius:20px;height: 3px; width: 50px; margin: 0 auto; background-color: #fbc531;"></div>
         <h4 class="text-secondary text-center">What I have created</h4>
     
-        <div class="container" style="min-height:100vh;">
-            <div class="row g-5 mt-4 align-items-stretch">
+        <div class="container" >
+            <div class="row g-5 mt-4 align-items-center">
                 
                 
-                <div class="col-md-6 mb-5 "id="book">
-                    <a href="https://lisna-kt.github.io/bookingsite/" target="_blank" style="text-decoration:none;color:inherit; width:100%;"id="booking-parent">
-                        <div id="parent-project" class=" position-relative" style="border-radius: 20px;  ">
-                            
-                           
-                            <div class=" position-absolute">
-                                <img class="bookimg" src="booking-img.png" style="border-radius:20px; width: 100%; height: 100%;">
+                <div class="col-lg-6"id="book">
+                    <div class="container mb-4">
+                    <a href="https://lisna-kt.github.io/bookingsite/" target="_blank" style="text-decoration:none;color:inherit; width:100%;">
+                        <div id="parent-project" class="d-grid text-center" style=" overflow: hidden; ">
+
+                            <!-- Yellow Box with Heading (Overlaying the Top Half of the Image) -->
+                            <div class="bg-warning p-5"
+                                 style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                        width: 100%; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;z-index:1">
+                                <h2 class="mt-0 book-head">Booking Site</h2>
                             </div>
-    
+                        
+                            <!-- Image Below the Div (Partially Visible) -->
+                             <div class="booking-container">
+                            <img class="book-img img-fluid" src="booking-img.png" 
+                                 style="border-radius: 30px; width: 100%; margin-top: -80px;">
+                                </div>
                             
-                            <div class="bg-warning p-5 text-center position-absolute" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-                            z-index:1;
-                            width:100%;border-bottom-left-radius:50px; border-bottom-right-radius:50px;">
-                                <h2>Booking Site</h2>
-                            </div>
-    
                         </div>
                     </a>
                 </div>
+                </div>
     
                 
-                <div class="col-md-6  ">
-                    <div>
-                    <p class="text-secondary col-sm-12">A responsive travel booking website replicating the functionality of Booking.com. It features a user-friendly interface, hotel listings, destination details, and seamless navigation. Built with modern web technologies, it showcases my skills in front-end development and UI/UX design.</p>
-                   <h3 class="text-white pt-4 col-sm-12">Technologies used..</h3>
-                    <div class="pb-5 computer"style="height:150px;"><img src="computer.jpg"style="border-radius:50% ;height:100px;width:100px" alt=""></div>
-                    <div class="d-flex gap-4">
-                        <h6 class=" text-white">HTML</h6>
-                    <h6 class=" text-white">CSS</h6>
-                    <h6 class=" text-white">JAVASCRIPT</h6>
-                </div>
+                <div class="col-lg-6  ">
+                   
+                    <p class=" text-secondary ">A responsive travel booking website replicating the functionality of Booking.com. It features a user-friendly interface, hotel listings, destination details, and seamless navigation. Built with modern web technologies, it showcases my skills in front-end development and UI/UX design.</p>
+                   
+                    <div class=" computer mt-3 text-center"style="height:150px;"><img src="computer.jpg"style="border-radius:50% ;height:100px;width:100px" alt=""></div>
+                    
+                    <h3 class="text-white pt-2 text-center">Technologies used..</h3>
+                        <div class="d-flex gap-4 justify-content-center text-secondary">
+                        <h6 >HTML</h6>|
+                    <h6 >CSS</h6>|
+                    <h6 >JAVASCRIPT</h6>
+                
+
                 </div>
                 
                 </div>
@@ -253,7 +259,7 @@
             <p><i class="fa-solid fa-globe text-warning"></i><a href="https://www.linkedin.com/in/lisna-kt-746596211/"target="_blank" style="text-decoration: none; color: inherit;"> www.lisnakt.com</a></p>
 
             <h5 class="mt-4">Follow Me</h5>
-            <div class="d-flex gap-3">
+            <div class="d-flex gap-3  pb-4 justify-content-md-start justify-content-center">
                 <a href="https://www.facebook.com/" class="text-light"target="-blank"><i class="fa-brands fa-facebook fs-4"></i></a>
                 <a href="https://github.com/Lisna-kt" class="text-light"target="_blank"><i class="fa-brands fa-github fs-4"></i></a>
                 <a href="https://www.linkedin.com/in/lisna-kt-746596211/" class="text-light"target="_blank"><i class="fa-brands fa-linkedin fs-4"></i></a>
@@ -288,15 +294,16 @@
         </div>
     </div>
 </section>
-</section>
-
 <!-- footer -->
-<footer class="bg-dark text-light text-center py-3">
+<footer class="bg-dark text-light text-center py-3"style="z-index:2">
     <img src="limg.png" width="50px" height="50px"alt="">
     <p class="mb-0">© 2025 All Rights Reserved | Lisna</p>
 </footer>
 
 <!-- javascript -->
+</section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         
